@@ -1,7 +1,7 @@
 print ("[YOLO] Security Surveillance Object Detection")
 print ("[YOLO] Loading libraries...", flush=True)
 import torch # refer to pytorch homepage for the current install commands (GPU dependent)
-import cv2 # pip install
+import cv2 # pip install opencv-python
 import os
 import time
 import numpy as np
