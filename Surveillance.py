@@ -80,8 +80,10 @@ while True: # Main Loop
     # ret = cap.grab() # Skip 1 frame
     ret, img = cap.read()
     if ret is not True: # Capture failed. Loop until camera recovers
-        print(type(ret)) 
-        print(ret) # ch, cw, cc = img.shape # True (1440, 2560, 3) #'NoneType' object has no attribute 'shape'
+        # print(type(ret)) 
+        # print(ret) # ch, cw, cc = img.shape # True (1440, 2560, 3) #'NoneType' object has no attribute 'shape'
+        print ("[CAMERA] Retrying...")
+        time.sleep(5)
         continue
     
     ## start = time.time() # measure model compute time
